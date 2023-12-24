@@ -1,13 +1,54 @@
+.calculator{
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 0.5em;
+    border:1px solid #F0F0F0;
+    border-radius: .125em;
+}
+.ccontent{
+    display: flex;
+    flex-direction: column;
+}
 .ccontent__main-key-pad{
-    font-size: .6rem;
+    display: flex;
+    flex-direction: column;
+    font-size: .6em;
+}
+.ccontent__key-pad-middle{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.ccontent__key-pad-middle .left-pad,
+.ccontent__key-pad-middle .right-pad
+{
+    flex-direction: column;
+}
+.hidden-item{
+    visibility: hidden;
+}
+.ccontent__key-pad-middle .middle-pad{
+    width: 7em;
+    align-content: flex-start;
+    justify-content: center;
+}
+.ccontent__key-pad-middle .middle-pad .key-pad__item .key-pad__but{
+    line-height: 2.4em;
+    font-size: .8em;
+    height: 2.4em;
+    width: 2.4em;
 }
 .key-pad{
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .key-pad__item{
-    margin: .5rem;
+    margin: .125rem;
 }
 .key-pad__but{
     text-decoration: none;
@@ -19,19 +60,6 @@
     display: inline-block;
     background: #F0F0F0;
 }
-.key-pad__top-pad .key-pad__but{
-    width: 3em;
-}
-.but__CLRM2{
-    /* font-size: .8em; */
-}
-.but__CLRM2>span{
-    display: inline-block;
-    font-size: .6em;
-    line-height: .9em;
-}
-.but__CLRM2>span>sub,
-.but__CLRM2>span>small
-{
-    display: block;
+.key-pad__top-pad{
+    margin-bottom: .25em;
 }

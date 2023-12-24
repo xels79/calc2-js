@@ -8,4 +8,10 @@ html,body{
 body{
     margin: 0;
     padding: 0;
+    background: #23211f;
+}
+.container{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
