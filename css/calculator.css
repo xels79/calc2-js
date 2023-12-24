@@ -1,0 +1,37 @@
+.ccontent__main-key-pad{
+    font-size: .6rem;
+}
+.key-pad{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.key-pad__item{
+    margin: .5rem;
+}
+.key-pad__but{
+    text-decoration: none;
+    line-height: 2em;
+    font-size: .8em;
+    height: 2em;
+    text-align: center;
+    width: 2em;
+    display: inline-block;
+    background: #F0F0F0;
+}
+.key-pad__top-pad .key-pad__but{
+    width: 3em;
+}
+.but__CLRM2{
+    /* font-size: .8em; */
+}
+.but__CLRM2>span{
+    display: inline-block;
+    font-size: .6em;
+    line-height: .9em;
+}
+.but__CLRM2>span>sub,
+.but__CLRM2>span>small
+{
+    display: block;
+}
